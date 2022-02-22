@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(29, 37, 61);
+}
+
+.card-content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#footer-one {
+    border: none;
+    padding-bottom: 0.1rem;
+}

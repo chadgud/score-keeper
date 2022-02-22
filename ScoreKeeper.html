@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="ScoreKeeper.css">
+</head>
+<body>   
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="card-header-title is-size-3 is-centered">Basketball Score Keeper</h1>
+                    </div>
+                    <div class="card-image">
+                      <figure class="image">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1790&q=80" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content has-text-centered">
+                        <h2 class="is-size-4 has-text-weight-bold" id="scoreDisplay">Team 1: <span id="teamOneDisplay">0</span> - Team 2: <span id="teamTwoDisplay">0</span></h2>
+                    </div>    
+                    <div class="card-content has-text-centered">    
+                        <label for="playTo" class="label is-inline">Playing To:</label>
+                        <div id="selector" class="select is-small is-rounded">
+                            <select name="playTo" id="playTo">
+                                <option value="7" selected>7</option>
+                                <option value="11">11</option>
+                                <option value="21">21</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="footer-one" class="card-footer">
+                        <div id="footer-one" class="card-footer-item">
+                            <h3 class="has-text-weight-bold">Team 1</h3>
+                        </div>
+                        <div id="footer-one" class="card-footer-item">
+                            <h3 class="has-text-weight-bold">Team 2</h3>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="button card-footer-item is-primary" id="teamOneSingle">+1</button>
+                        <button class="button card-footer-item is-primary" id="teamOneDouble">+2</button>
+                        <button class="button card-footer-item is-primary" id="teamOneTriple">+3</button>
+                        <button class="button card-footer-item is-info" id="teamTwoSingle">+1</button>
+                        <button class="button card-footer-item is-info" id="teamTwoDouble">+2</button>
+                        <button class="button card-footer-item is-info" id="teamTwoTriple">+3</button>   
+                    </div>
+                    <div class="card-footer">
+                        <button class="button card-footer-item is-danger" id="reset">Reset</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <script src="ScoreKeeper.js"></script>
+</body>
+</html>
